@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>e332b7c8-fd48-4cc3-ba29-a59f9ecba1d1</Guid>
+    <Name>Timed Grenades</Name>
+    <Description>Change grenade mechanics to work with delayed detonation, either throwing and detonating the following turn, or priming and throwing the following turn for contact detonation.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>TimedGrenades</AssemblyName>
+    <RootNamespace>TimedGrenades</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Config\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEngine.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComTimedGrenades.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\FX_GW_DelayedExplosions.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\TimedGrenades.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_Effect_PrimedGrenade.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_Effect_TickingGrenade.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_GameState_Effect_PrimedGrenade.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_GameState_Effect_TickingGrenade.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_WeaponManager.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_X2Ability_Grenades.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_X2Action_FireNoExplode.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_X2Action_ShowTickingGrenade.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_X2Action_SpawnImpactActor.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\TimedGrenades_X2TargetingMethod_Prime.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TimedGrenades\Classes\X2DownloadableContentInfo_TimedGrenades.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Localization" />
+    <Folder Include="Content" />
+    <Folder Include="Src" />
+    <Folder Include="Src\TimedGrenades" />
+    <Folder Include="Src\TimedGrenades\Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
