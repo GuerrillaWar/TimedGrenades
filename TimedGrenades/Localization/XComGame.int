@@ -1,6 +1,10 @@
 [TG_ThrowGrenade X2AbilityTemplate]
 LocFriendlyName="Throw Grenade"
-LocHelpText="Prime and throw grenade immediately. Will explode the following turn."
+LocHelpText="Prime and throw grenade immediately. Will explode on the following turn."
+
+[TG_LaunchGrenadde X2AbilityTemplate]
+LocFriendlyName="Launch Grenade"
+LocHelpText="Launch Grenade immediately. Will explode on the following turn."
 
 [TG_ThrowPrimedGrenade X2AbilityTemplate]
 LocFriendlyName="Throw Primed Grenade"
